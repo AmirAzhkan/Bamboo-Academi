@@ -1,0 +1,100 @@
+.oploadFileHolder {
+  width: 500px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.addArticleOploadFileHolder {
+  width: 500px;
+}
+
+.addCourseOploadFileHolder {
+  width: 400px;
+  height: 40px;
+  margin-top: 35px;
+}
+
+.editArticleOploadFileHolder {
+  width: 620px;
+}
+
+.editCourseOploadFileHolder {
+  width: 100%;
+  text-align: right;
+  margin-bottom: 20px;
+}
+
+.oploadFileHolder > label {
+  width: 20%;
+  font-size: 16px;
+  font-family: shabbold;
+  color: #004458;
+  /* margin-left: 15px; */
+  padding-top: 5px;
+}
+
+.oploadFileHolder > input {
+  width: 80%;
+  color: #004458;
+  border-radius: 0px;
+}
+
+.oploadFileHolder > input:focus {
+  box-shadow: none;
+  border: 1px solid #004458;
+}
+
+.addCourseOploadFileHolder > label {
+  width: 30%;
+}
+
+.addCourseOploadFileHolder > input {
+  width: 70%;
+}
+
+/* Responsive  */
+@media only screen and (max-width: 960px) {
+  .editArticleOploadFileHolder {
+    display: block;
+  }
+
+  .editArticleOploadFileHolder > label {
+    width: 100% !important;
+    margin-bottom: 12px;
+  }
+  .editArticleOploadFileHolder > input {
+    width: 100% !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .oploadFileHolder {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .oploadFileHolder > label {
+    font-size: 14px;
+  }
+  .oploadFileHolder > input {
+    font-size: 14px;
+  }
+  @media only screen and (max-width: 480px) {
+    .oploadFileHolder > label {
+      width: 25%;
+    }
+    .oploadFileHolder > input {
+      width: 75%;
+    }
+  }
+  @media only screen and (max-width: 375px) {
+    .oploadFileHolder > label {
+      width: 30%;
+    }
+    .oploadFileHolder > input {
+      width: 70%;
+    }
+  }
+}

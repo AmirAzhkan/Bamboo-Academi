@@ -1,0 +1,55 @@
+.pannelBg {
+  direction: rtl;
+}
+
+.contentHolder {
+  background: #dbdbdb;
+  height: 100vh;
+  width: 80%;
+  float: left;
+  padding: 25px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.contentHolder .menuHolder {
+  background: #fff;
+  padding: 15px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+}
+
+.toastStyle {
+  text-align: center;
+  font-size: 16px;
+  border-radius: 0 !important;
+  font-family: shab !important;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1280px) {
+}
+
+@media only screen and (max-width: 960px) {
+  .contentHolder {
+    width: 82%;
+    padding: 15px;
+  }
+  .contentHolder .menuHolder {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .contentHolder {
+    width: 100%;
+    padding: 15px 25px;
+  }
+  .contentHolder .menuHolder {
+    margin-bottom: 15px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 375px) {
+}

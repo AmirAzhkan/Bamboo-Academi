@@ -1,0 +1,286 @@
+/* This Css File Created For Costumizing Bootstrap In PannelTab Component */
+
+.nav {
+  margin-top: 50px;
+}
+
+.nav > .nav-link {
+  color: #fff;
+  font-size: 18px;
+  border: none;
+  border-radius: 0;
+  padding: 0px;
+  margin-bottom: 3px;
+  text-align: right;
+
+  transition: 0.3s;
+}
+
+.nav > .nav-link > .tabLinks {
+  color: #fff;
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  padding: 10px 16px;
+  padding-right: 85px;
+}
+
+.nav .nav-link.dashboard {
+  background: url(../../../Assets/Images/StudentPannel/DashboardW.png) no-repeat
+    80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.editProfile {
+  background: url(../../../Assets/Images/StudentPannel/EditProfileW.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.myCourses {
+  background: url(../../../Assets/Images/StudentPannel/MyCoursesW.png) no-repeat
+    80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.courses {
+  background: url(../../../Assets/Images/StudentPannel/CoursesW.png) no-repeat
+    80% 40%;
+  background-size: 25px;
+}
+
+/*                                                      Tab Hover Style  */
+
+/*                                                           Base Hover */
+.nav > .nav-link:hover {
+  color: #088568;
+  background: #fff;
+}
+
+.nav > .nav-link:hover > .tabLinks {
+  color: #088568;
+  text-decoration: none;
+}
+
+/*                                                      Costumize Hover */
+.nav .nav-link.dashboard:hover {
+  background: #fff url(../../../Assets/Images/StudentPannel/DashboardG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.editProfile:hover {
+  background: #fff url(../../../Assets/Images/StudentPannel/EditProfileG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.myCourses:hover {
+  background: #fff url(../../../Assets/Images/StudentPannel/MyCoursesG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.courses:hover {
+  background: #fff url(../../../Assets/Images/StudentPannel/CoursesG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+/*                                                      Tab Active Style  */
+
+/*                                                           Base Active */
+.nav > .nav-link.active {
+  color: #088568;
+  background: #fff;
+}
+
+.nav > .nav-link.active > .tabLinks {
+  color: #088568;
+  text-decoration: none;
+}
+
+/*                                                      Costumize Active */
+.nav .nav-link.active.dashboard {
+  background: #fff url(../../../Assets/Images/StudentPannel/DashboardG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.active.editProfile {
+  background: #fff url(../../../Assets/Images/StudentPannel/EditProfileG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.active.myCourses {
+  background: #fff url(../../../Assets/Images/StudentPannel/MyCoursesG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+.nav .nav-link.active.courses {
+  background: #fff url(../../../Assets/Images/StudentPannel/CoursesG.png)
+    no-repeat 80% 40%;
+  background-size: 25px;
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1280px) {
+  .nav > .nav-link {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 1010px) {
+  .nav > .nav-link > .tabLinks {
+    padding-right: 75px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .nav > .nav-link {
+    text-indent: 0;
+    text-align: center;
+  }
+  .nav > .nav-link > .tabLinks {
+    padding: 10px 0px;
+    text-align: center;
+  }
+
+  .nav .nav-link.dashboard,
+  .nav .nav-link.editProfile,
+  .nav .nav-link.myCourses,
+  .nav .nav-link.courses {
+    background: none;
+  }
+
+  .nav .nav-link.dashboard:hover,
+  .nav .nav-link.editProfile:hover,
+  .nav .nav-link.myCourses:hover,
+  .nav .nav-link.courses:hover {
+    background: none;
+    color: #088568;
+    background-color: #fff;
+  }
+
+  .nav .nav-link.active.dashboard,
+  .nav .nav-link.active.editProfile,
+  .nav .nav-link.active.myCourses,
+  .nav .nav-link.active.courses {
+    background: none;
+    color: #088568;
+    background-color: #fff;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .nav {
+    margin: 0;
+    height: 100%;
+    flex-direction: row !important;
+  }
+  .nav > .nav-link {
+    width: 50px;
+    margin-left: 3px;
+    text-align: center;
+    padding: 0;
+    margin-bottom: 0px;
+    text-indent: 0px;
+  }
+
+  .nav > .nav-link > .tabLinks {
+    padding: 0px;
+  }
+
+  .nav > .nav-link:nth-child(4) {
+    margin-left: 0px;
+  }
+
+  .nav .nav-link.dashboard {
+    background: url(../../../Assets/Images/StudentPannel/DashboardW.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.editProfile {
+    background: url(../../../Assets/Images/StudentPannel/EditProfileW.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.myCourses {
+    background: url(../../../Assets/Images/StudentPannel/MyCoursesW.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.courses {
+    background: url(../../../Assets/Images/StudentPannel/CoursesW.png) no-repeat
+      50% 50%;
+    background-size: 25px;
+  }
+
+  /* Tab Hover Style In Responsive Mode */
+
+  .nav > .nav-link:hover {
+    color: #088568;
+    background: #fff;
+  }
+
+  .nav .nav-link.dashboard:hover {
+    background: #fff url(../../../Assets/Images/StudentPannel/DashboardG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.editProfile:hover {
+    background: #fff url(../../../Assets/Images/StudentPannel/EditProfileG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.myCourses:hover {
+    background: #fff url(../../../Assets/Images/StudentPannel/MyCoursesG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.courses:hover {
+    background: #fff url(../../../Assets/Images/StudentPannel/CoursesG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  /* Tab Active Style In Responsive Mode */
+  .nav > .nav-link.active {
+    color: #088568;
+    background: #fff;
+  }
+
+  .nav .nav-link.active.dashboard {
+    background: #fff url(../../../Assets/Images/StudentPannel/DashboardG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.active.editProfile {
+    background: #fff url(../../../Assets/Images/StudentPannel/EditProfileG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.active.myCourses {
+    background: #fff url(../../../Assets/Images/StudentPannel/MyCoursesG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+
+  .nav .nav-link.active.courses {
+    background: #fff url(../../../Assets/Images/StudentPannel/CoursesG.png)
+      no-repeat 50% 50%;
+    background-size: 25px;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

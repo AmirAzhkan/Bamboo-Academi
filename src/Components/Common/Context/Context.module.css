@@ -1,0 +1,34 @@
+.h2Light {
+  color: #fff;
+}
+
+.h2Dark {
+  color: #004458;
+}
+
+.text {
+  width: 100%;
+  text-align: justify;
+  margin-top: 15px;
+  margin-bottom: 0;
+}
+
+.textLight {
+  color: #e9e9e9;
+}
+
+.textDark {
+  color: #7e7e7e;
+}
+
+.landingFirstContextTitle {
+  font-size: 45px;
+  line-height: 60px;
+}
+
+.landingFirstContextHolder {
+  position: absolute;
+  bottom: 95px;
+  right: 0px;
+  z-index: 1;
+}

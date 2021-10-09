@@ -1,0 +1,42 @@
+@font-face {
+  src: url("Shabnam-Thin.ttf");
+  font-family: shab;
+}
+
+@font-face {
+  src: url("Lalezar\ Font.ttf");
+  font-family: lale;
+}
+
+@font-face {
+  src: url("Shabnam-Bold.ttf");
+  font-family: shabbold;
+}
+
+@font-face {
+  src: url("Samim-FD.ttf");
+  font-family: samim;
+}
+
+@font-face {
+  src: url("Samim-Bold-FD.ttf");
+  font-family: samimbold;
+}
+
+.lale {
+  font-family: lale;
+  direction: rtl;
+  font-size: 30px;
+}
+
+.shab {
+  font-family: shab;
+  direction: rtl;
+  font-size: 18px;
+}
+
+.shabbold {
+  font-family: shabbold;
+  direction: rtl;
+  font-size: 18px;
+}

@@ -1,0 +1,11 @@
+.inputHolder {
+  /* height: 450px;
+  border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+}

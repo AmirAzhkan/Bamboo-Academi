@@ -1,0 +1,137 @@
+/*                                                 React-Modal Style */
+.reactModal {
+  width: 700px;
+  height: auto;
+  margin: 75px auto;
+  background-color: #fff;
+  direction: rtl;
+  position: relative;
+}
+
+.reactModal .closeModal {
+  width: 35px;
+  height: 35px;
+  background: url("../../../Assets/Images/Courses/Close.png") no-repeat 50%;
+  background-size: 50px;
+  cursor: pointer;
+
+  position: absolute;
+  top: 0px;
+  right: -50px;
+}
+
+.reactModal .detailsHolder {
+  width: 100%;
+  height: 100%;
+  padding: 30px;
+}
+
+.reactModal .detailsHolder .titles {
+  width: 100%;
+  color: #088568;
+  font-family: shab;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(8, 133, 104, 0.3);
+  padding-bottom: 10px;
+  margin-bottom: 18px;
+  text-align: right;
+}
+
+.reactModal .detailsHolder .studentStatus {
+  font-family: shab;
+  font-size: 20px;
+  color: #088568;
+  text-align: center;
+  margin: 100px 0px;
+}
+
+.manageTd {
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manageTd > span {
+  width: 30%;
+  border: 1px solid transparent;
+  display: inline-block;
+  padding: 27px 0;
+  margin: 0 auto;
+  position: relative;
+}
+
+.manageTd > span.deleteStudent {
+  background: url(../../../Assets/Images/AdminPannel/DeleteR.png) no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span > .tooltip {
+  background: #ccc;
+  width: 100px;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  z-index: 5;
+
+  position: absolute;
+  top: 12px;
+  right: 50px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.manageTd > span:hover > .tooltip {
+  opacity: 1;
+  visibility: visible;
+  background: #f83333;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1180px) {
+  .reactModal {
+    width: 700px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .reactModal {
+    width: 500px;
+  }
+
+  .reactModal .closeModal {
+    top: -45px;
+    right: 0px;
+  }
+
+  .reactModal .detailsHolder .studentStatus {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .reactModal {
+    width: 400px;
+  }
+
+  .manageTd > span > .tooltip {
+    display: none;
+  }
+
+  .reactModal .detailsHolder .titles {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .reactModal {
+    width: 340px;
+  }
+
+  .reactModal .detailsHolder .studentStatus {
+    font-size: 14px;
+  }
+}

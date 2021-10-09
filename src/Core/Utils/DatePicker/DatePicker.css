@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+.modal-content {
+  border-radius: 0;
+  border: none;
+  margin: 110px auto;
+}
+
+.plain,
+select,
+input,
+.datePickerUl,
+.datePickerLi,
+select:focus {
+  border: 0;
+  outline: none;
+  outline-color: none;
+  box-shadow: none;
+}
+
+.li-current {
+  background: lightgreen;
+  font-weight: bold;
+}
+
+.datePickerUl,
+.datePickerLi {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+  list-style: none;
+  margin: 0;
+  padding: 1px;
+}
+.datePickerLi .form-select {
+  border-radius: 0 !important;
+  border: 1px solid #004458;
+}
+
+.datePickerLi .form-select:focus {
+  box-shadow: none;
+}
+
+.datePickerLi .form-control {
+  border-radius: 0 !important;
+  background: #004458;
+  color: #fff;
+  border: none;
+}
+
+.datePickerLi .form-control:focus {
+  box-shadow: none;
+}
+
+.datePickerUl {
+  margin-bottom: 2px;
+}
+
+.datePickerUl .li-calendar {
+  border: 2px solid #004458;
+  border-radius: 0;
+}
+
+.datePickerUl .li-calendar:hover {
+  border: 2px solid #004458;
+  background: rgba(0, 68, 88, 0.7);
+  color: #fff;
+}
+
+.li-calendar {
+  min-width: 33px;
+  height: 33px;
+  text-align: center;
+  border: 2px solid #ddd;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.li-pointer,
+.li-btnToday {
+  cursor: pointer;
+}
+
+.li-btnToday:hover {
+  background-color: lightgreen;
+}
+
+.li-pointer:hover {
+  background-color: skyblue;
+  border: 2px solid skyblue;
+}
+.li-empty {
+  min-width: 33px;
+  height: 33px;
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 50%;
+}
+
+option {
+  padding: 0;
+  margin: 0;
+  font-size: 1rem;
+}
+
+.modal-footer > .btn-danger {
+  padding: 10px;
+  border-radius: 0;
+}
+
+.modal-footer > .btn-primary {
+  border-radius: 0;
+  background: #09b28b;
+  border: none;
+  padding: 10px;
+}
+.modal-footer > .btn-primary:active {
+  background: #09b28b;
+}
+.modal-footer > .btn-primary:focus {
+  box-shadow: none;
+}
+
+@media (min-width: 320px) {
+  .modal-sm {
+    max-width: 300px !important;
+  }
+  .modal-dialog {
+    max-width: 500px;
+    margin: 1.75rem auto;
+  }
+}
+
+.modal-open {
+  direction: ltr;
+}

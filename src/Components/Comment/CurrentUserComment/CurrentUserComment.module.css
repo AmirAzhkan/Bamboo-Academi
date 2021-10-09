@@ -1,0 +1,29 @@
+.holder {
+  text-align: right;
+  direction: rtl;
+  padding: 20px 40px;
+}
+
+.holder > h4 {
+  font-family: lale;
+  font-size: 30px;
+  color: #004458;
+  padding: 0;
+}
+
+.holder > .userCommentsHolder {
+  padding: 0;
+}
+
+.holder > .userCommentsHolder > p {
+  color: #004458;
+  font-family: shab;
+  font-size: 18px;
+}
+
+.holder > .userCommentsHolder > p > span {
+  color: #004458;
+  font-family: shabbold;
+  font-size: 18px;
+  display: inline-block;
+}

@@ -1,0 +1,265 @@
+.bannerStyle {
+  height: 100vh;
+  width: 60%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loginPage {
+  background: url(../../Assets/Images/Banner/LoginBg.jpg) no-repeat;
+  background-size: cover;
+  float: right;
+
+  position: relative;
+}
+
+.registerPage {
+  background: url(../../Assets/Images/Banner/RegisterBg.jpg) no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
+  float: left;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.bannerMask {
+  background: #004458;
+  height: 100vh;
+  width: 100%;
+  opacity: 0.75;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+.detailsHolder {
+  width: 335px;
+  text-align: right;
+  /* height: 300px; */
+  /* border: 2px solid #fff; */
+}
+
+.logoResp {
+  display: none;
+}
+
+.title {
+  color: #fff;
+  font-size: 40px;
+  background: url(../../Assets/Images/Banner/BambooLogo.png) no-repeat -2% 40%;
+  background-size: 36px;
+  word-spacing: 4px;
+
+  transform: translateY(-50px);
+  opacity: 0;
+  visibility: hidden;
+
+  animation: TitleAnimation 1s ease-out forwards;
+}
+
+.line {
+  width: 0%;
+  height: 2px;
+  background: #dbdbdb;
+  margin: 25px auto 0;
+  z-index: 20;
+  position: relative;
+
+  animation: LineAnimation 1s linear forwards;
+  animation-delay: 0.7s;
+}
+
+.socialMediaHolder {
+  width: 100%;
+  height: 40px;
+  margin-top: 30px;
+  direction: rtl;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.linkStyle {
+  width: 50px;
+  height: 100%;
+  display: inline-block;
+
+  transform: translateX(-60px);
+  opacity: 0;
+  visibility: hidden;
+
+  animation: SocialMediaAnimation 0.7s linear forwards;
+}
+
+.youTube {
+  background: url(../../Assets/Images/Banner/YouTube.png) no-repeat 100% 0;
+  background-size: 25px;
+
+  animation-delay: 0.7s;
+}
+
+.whatsApp {
+  background: url(../../Assets/Images/Banner/WhatsApp.png) no-repeat 50% 0;
+  background-size: 25px;
+
+  animation-delay: 1s;
+}
+
+.telegram {
+  background: url(../../Assets/Images/Banner/Telegram.png) no-repeat 25% 0;
+  background-size: 25px;
+
+  animation-delay: 1.2s;
+}
+
+.instagram {
+  background: url(../../Assets/Images/Banner/Instagram.png) no-repeat 0% 0;
+  background-size: 25px;
+
+  animation-delay: 1.4s;
+}
+
+.homeButton {
+  background: url(../../Assets/Images/Banner/Home.png) no-repeat 50% 100%;
+  background-size: 30px;
+  width: 50px;
+  height: 50px;
+  display: block;
+  margin: 0 auto;
+  position: relative;
+  top: 160px;
+
+  transform: perspective(300px) translateZ(-30px);
+  opacity: 0;
+  visibility: hidden;
+
+  animation: HomeButtonAnimation 1s linear forwards;
+  animation-delay: 1.5s;
+}
+
+@keyframes TitleAnimation {
+  0% {
+    transform: translateY(-50px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes LineAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes SocialMediaAnimation {
+  0% {
+    transform: translateX(-60px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: translateX(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@keyframes HomeButtonAnimation {
+  0% {
+    transform: perspective(300px) translateZ(-30px);
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    transform: perspective(300px) translateZ(0px);
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+/* Responsive */
+
+@media only screen and (max-width: 1280px) {
+  .homeButton {
+    top: 210px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .bannerStyle {
+    width: 100%;
+    height: 50vh;
+  }
+
+  .registerPage {
+    position: relative;
+  }
+
+  .bannerMask {
+    width: 100%;
+    height: 50vh;
+  }
+  .homeButton {
+    display: none;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .bannerStyle {
+    height: 40vh;
+  }
+  .bannerMask {
+    height: 40vh;
+  }
+  .title {
+    width: 100%;
+    background: none;
+    font-size: 30px;
+    word-spacing: 5px;
+    text-align: center;
+    /* margin-right: 6px;
+    padding: 0 10px; */
+    transform: translateY(0px);
+    opacity: 1;
+    visibility: visible;
+    position: relative;
+
+    animation: none;
+  }
+  .line {
+    width: 100%;
+    margin-top: 10px;
+    animation: none;
+  }
+  .detailsHolder {
+    width: fit-content;
+  }
+
+  .socialMediaHolder {
+    display: none;
+  }
+
+  .logoResp {
+    width: 50px;
+    height: 50px;
+    background: url(../../Assets/Images/Banner/BambooLogo.png) no-repeat;
+    background-size: 30px;
+    margin: 0px auto;
+    position: relative;
+    /* top: 60px; */
+    display: block;
+  }
+}
+@media only screen and (max-width: 480px) {
+}

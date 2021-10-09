@@ -1,0 +1,62 @@
+.page-item .page-link {
+  width: 35px;
+  height: 35px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.page-item .pannelPaginat {
+  color: #088568;
+}
+
+.page-item .pannelPaginat:hover {
+  color: #fff;
+  background-color: #088568;
+}
+
+.page-item .coursesPaginat {
+  color: #004458;
+}
+.page-item .coursesPaginat:hover {
+  color: #fff;
+  background-color: #004458;
+}
+
+.page-item .nextCoursesPaginat {
+  background: #004458 url(../../../Assets/Images/Articles/next.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.page-item .pervCoursesPaginat {
+  background: #004458 url(../../../Assets/Images/Articles/perv.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.page-item .nextPannelPaginat {
+  background: #088568 url(../../../Assets/Images/Articles/next.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.page-item .pervPannelPaginat {
+  background: #088568 url(../../../Assets/Images/Articles/perv.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+/*                                                               Active Style : */
+.coursesActive > li.active > a.page-link {
+  background: #004458;
+  z-index: 0;
+}
+
+.pannelActive > li.active > a.page-link {
+  background: #088568;
+}
+
+li.page-item {
+  cursor: pointer;
+}

@@ -1,0 +1,84 @@
+.errorMotherDiv {
+  position: fixed;
+}
+
+.errorDiv {
+  background: url("../../Assets/Images/Error/bg3.jpg") no-repeat 50%;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+
+.errorHolder {
+  width: 94%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.errorMask {
+  background: #000;
+  height: 100vh;
+  opacity: 0.7;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.errorBaner {
+  margin: 260px auto;
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.errorBaner > p {
+  margin: 0;
+  color: #fff;
+  font-family: shab;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.errorBaner > p:nth-child(1) {
+  font-size: 40px;
+  border-bottom: 2px solid #888;
+}
+
+.errorBaner > p:nth-child(2) {
+  font-size: 26px;
+  color: #dbdbdb;
+}
+
+.errorBaner > img {
+  margin: 0 auto;
+  width: 80px;
+  height: 80px;
+}
+
+/*                                     RESP */
+@media only screen and (max-width: 767px) {
+  .errorDiv {
+    background: url("../../Assets/Images/Error/bg5.jpg") no-repeat 50%;
+    background-size: cover;
+  }
+  .errorBaner > img {
+    width: 50px;
+    height: 50px;
+  }
+  .errorBaner > p:nth-child(1) {
+    font-size: 28px;
+  }
+
+  .errorBaner > p:nth-child(2) {
+    font-size: 14px;
+  }
+  .errorBaner {
+    margin: 260px auto;
+  }
+}

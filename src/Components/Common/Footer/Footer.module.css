@@ -1,0 +1,289 @@
+.landingFooterDiv {
+  height: 580px;
+  background-color: #004458;
+  position: relative;
+  width: 100vw;
+}
+
+.FooterDivHolder {
+  border: 1px solid transparent;
+  height: 500px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.landingFooterDiv h4.aboutBamboo {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  right: 0px;
+}
+
+.landingFooterDiv p.aboutBambooText {
+  color: #fff;
+  position: absolute;
+  width: 40%;
+  top: 80px;
+  right: 0px;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.footerLine {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 200px auto;
+}
+
+.landingFooterDiv h4.khabarName {
+  color: #fff;
+  position: absolute;
+  top: 30px;
+  left: 395px;
+}
+
+.landingFooterDiv h4.contactUs {
+  color: #fff;
+  position: absolute;
+  top: 240px;
+  right: 0px;
+}
+
+.landingFooterDiv h4.beWithUs {
+  color: #fff;
+  position: absolute;
+  top: 240px;
+  right: 400px;
+}
+
+.beWithUsPHolder {
+  direction: rtl;
+  text-align: right;
+  position: absolute;
+  top: 300px;
+  right: 400px;
+  color: #fff;
+}
+
+.beWithUsPHolder > p {
+  margin-right: 0px;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+.beWithUsPHolder > p:hover {
+  margin-right: 15px;
+}
+
+.contactUsPHolder {
+  direction: rtl;
+  text-align: right;
+  position: absolute;
+  top: 300px;
+  right: 0px;
+  color: #fff;
+}
+
+.contactUsPHolder > ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  float: right;
+  align-items: center;
+}
+
+.contactUsPHolder > ul > li {
+  float: left;
+  margin-left: 25px;
+}
+
+.contactUsPHolder img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+ul.footerItHolder {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0px;
+  top: 280px;
+}
+
+ul.footerItHolder > li {
+  float: left;
+  margin-right: 18px;
+  width: 110px;
+  height: 110px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+ul.footerItHolder img {
+  display: block;
+  width: 90%;
+  height: 92%;
+  margin: 8px auto;
+}
+
+.footerInfo {
+  margin: 0;
+  padding: 15px;
+  width: 100%;
+  color: #dbdbdb;
+  background: rgba(0, 43, 55, 1);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  text-align: center;
+  font-family: shab;
+  font-size: 13px;
+}
+
+/* RESP */
+@media only screen and (max-width: 1280px) {
+  .landingFooterDiv h4.beWithUs {
+    right: 320px;
+  }
+
+  .beWithUsPHolder {
+    right: 320px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .landingFooterDiv h4 {
+    font-size: 23px;
+  }
+  .landingFooterDiv p.aboutBambooText {
+    font-size: 13px;
+    width: 35%;
+  }
+  .landingFooterDiv h4.khabarName {
+    top: 30px;
+    left: 372px;
+  }
+  .contactUsPHolder img {
+    width: 22px;
+    height: 22px;
+  }
+  .contactUsPHolder > p {
+    font-size: 16px;
+  }
+  .beWithUsPHolder > p {
+    font-size: 16px;
+  }
+  ul.footerItHolder {
+    display: none;
+  }
+  .footerInfo {
+    font-size: 12px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .landingFooterDiv h4.aboutBamboo {
+    top: 20px;
+    right: 50%;
+    width: 180px;
+    margin-right: -90px;
+    text-align: center;
+  }
+
+  .landingFooterDiv p.aboutBambooText {
+    width: 100%;
+    padding: 0 80px;
+    top: 55px;
+    text-align: center;
+    font-size: 11px;
+  }
+  .landingFooterDiv h4.khabarName {
+    top: 160px;
+    left: 50%;
+    margin-left: -90px;
+    width: 180px;
+    text-align: center;
+  }
+
+  .footerLine {
+    margin: 280px auto;
+  }
+
+  .landingFooterDiv h4.contactUs {
+    top: 305px;
+  }
+  .contactUsPHolder {
+    top: 350px;
+    right: 0px;
+  }
+  .footerInfo {
+    font-size: 10px;
+  }
+  .landingFooterDiv h4.beWithUs {
+    top: 305px;
+  }
+  .beWithUsPHolder {
+    top: 350px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .landingFooterDiv h4.khabarName {
+    display: none;
+  }
+  .contactUsPHolder img {
+    width: 17px;
+    height: 17px;
+  }
+  .contactUsPHolder > p {
+    font-size: 13px;
+  }
+  .landingFooterDiv p.aboutBambooText {
+    padding: 0 40px;
+  }
+  .footerLine {
+    margin: 150px auto;
+  }
+  .landingFooterDiv h4.beWithUs {
+    top: 165px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .beWithUsPHolder {
+    top: 205px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .beWithUsPHolder > p {
+    font-size: 13px;
+  }
+  .landingFooterDiv h4.contactUs {
+    top: 335px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .contactUsPHolder {
+    top: 375px;
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+
+  .contactUsPHolder > ul {
+    position: relative;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    float: none;
+    align-items: center;
+  }
+  .contactUsPHolder > ul > li {
+    float: none;
+    display: inline;
+    margin-left: 0;
+    margin: 10px;
+  }
+}

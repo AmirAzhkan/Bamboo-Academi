@@ -1,0 +1,180 @@
+.rightSide {
+  width: 40%;
+  height: 100%;
+  float: right;
+  /* border: 1px solid green; */
+}
+
+.rightSide > .adminInfoHolder {
+  width: 100%;
+  height: 350px;
+  background: #f1f1f1;
+  padding: 20px;
+}
+
+.rightSide > .adminInfoHolder p {
+  color: #004458;
+  margin-bottom: 32px;
+  font-family: shab;
+}
+
+.rightSide > .adminInfoHolder p > span {
+  display: inline;
+  font-family: shabbold;
+}
+
+.leftSide {
+  width: 50%;
+  height: 100%;
+  float: left;
+  font-family: shab;
+  /* border: 1px solid blue; */
+
+  display: grid;
+}
+
+.leftSide > div {
+  width: 100%;
+  height: 180px;
+  /* border: 1px solid red; */
+}
+
+.leftSide > .leftSideTop {
+  align-self: flex-start;
+  margin-bottom: 35px;
+}
+
+.leftSide > .leftSideTop > div {
+  width: 47%;
+  height: 75%;
+  padding: 30px 0px;
+  background: #f1f1f1;
+  box-sizing: border-box;
+}
+
+.leftSide > .leftSideTop > .studentsCount {
+  float: right;
+}
+
+.leftSide > .leftSideTop > .studentsCount > p,
+.leftSide > .leftSideTop > .teachersCount > p {
+  margin: 0;
+  text-align: center;
+  color: #004458;
+}
+
+.countTitle {
+  font-family: shabbold;
+}
+
+.leftSide > .leftSideTop > .teachersCount {
+  float: left;
+}
+
+.leftSide > .leftSideBottom {
+  align-self: flex-end;
+}
+
+.leftSide > .leftSideBottom > .countHolder {
+  width: 100%;
+  height: 75%;
+  /* border: 1px solid black; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.leftSide > .leftSideBottom > .countHolder > div {
+  width: 32%;
+  height: 100%;
+  background: #f1f1f1;
+  padding: 30px 0px;
+  /* border: 1px solid red; */
+}
+
+.leftSide > .leftSideBottom > .countHolder > div > p {
+  margin: 0;
+  text-align: center;
+  color: #004458;
+}
+
+.titles {
+  width: 100%;
+  color: #088568;
+  font-family: shab;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(8, 133, 104, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 20px;
+  text-align: right;
+}
+
+/* Responsive */
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 960px) {
+  .dashboardHolder {
+    display: block;
+    height: 100%;
+  }
+
+  .rightSide {
+    width: 100%;
+    height: 440px;
+    margin-bottom: 40px;
+  }
+
+  .rightSide > .adminInfoHolder {
+    height: auto;
+    text-align: center;
+    padding: 0px 20px;
+  }
+
+  .rightSide > .adminInfoHolder > p {
+    border-bottom: 1px solid rgba(0, 68, 88, 0.3);
+    margin: 0;
+    padding: 20px 0;
+  }
+
+  .rightSide > .adminInfoHolder > p:nth-child(6) {
+    border-bottom: none;
+  }
+
+  .leftSide {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 480px) {
+}
+@media only screen and (max-width: 375px) {
+  .leftSide > .leftSideTop {
+    height: 310px;
+    margin-bottom: 20px;
+  }
+
+  .leftSide > .leftSideTop > div {
+    width: 100%;
+    height: 120px;
+  }
+
+  .leftSide > .leftSideTop > .studentsCount {
+    margin-bottom: 20px;
+  }
+
+  .leftSide > .leftSideBottom {
+    height: 470px;
+  }
+
+  .leftSide > .leftSideBottom > .countHolder {
+    width: 100%;
+    height: 100%;
+    display: block;
+  }
+
+  .leftSide > .leftSideBottom > .countHolder > div {
+    width: 100%;
+    height: 120px;
+    margin-bottom: 20px;
+  }
+}

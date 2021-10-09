@@ -1,0 +1,350 @@
+/* 
+green : #088568
+white : #fff 
+darkblue : #004458
+*/
+
+.buttonBaseStyle {
+  position: absolute;
+  padding: 15px 22px;
+  text-align: center;
+  border: none;
+  outline: none;
+  transition: 0.6s;
+  z-index: 1;
+  cursor: pointer;
+  width: 170px;
+  height: 57px;
+}
+/* buttonWhiteToBlue */
+
+.buttonWhiteToBlue {
+  color: #004458;
+  background-color: #fff;
+  box-shadow: inset 0 0 0 0 #004458;
+}
+
+.buttonWhiteToBlue:hover {
+  color: #fff;
+  box-shadow: inset 0 70px 0 0 #004458;
+}
+
+.buttonCoursesCards {
+  padding: 15px 0;
+}
+
+.buttonCoursesCardsStyle:hover {
+  color: #fff;
+  box-shadow: inset 0 70px 0 0 #004458;
+}
+
+.buttonFirst {
+  top: 470px;
+  right: 450px;
+}
+
+/* buttonGrayToWhite */
+
+.buttonGrayToWhite {
+  color: #004458;
+  background-color: #dbdbdb;
+  box-shadow: inset 0 0 0 0 #fff;
+  opacity: 0.8;
+}
+
+.buttonGrayToWhite:hover {
+  box-shadow: inset 0 70px 0 0 #fff;
+  opacity: 1;
+}
+
+.buttonServices1 {
+  left: 7vw;
+  top: 50%;
+  margin-top: -28px;
+}
+
+.buttonServices2 {
+  right: 7vw;
+  top: 50%;
+  margin-top: -28px;
+}
+
+.buttonArticles {
+  width: 75%;
+  height: auto;
+  padding: 10px;
+  right: 1.6vw;
+}
+
+/* buttonBlueToWhite */
+
+.buttonBlueToWhite {
+  color: #fff;
+  background-color: #004458;
+  box-shadow: inset 0 0 0 0 #fff;
+}
+
+.buttonBlueToWhite:hover {
+  color: #004458;
+  box-shadow: inset 0 70px 0 0 #fff;
+}
+
+/* buttonGreenToBlue */
+
+.buttonGreenToBlue {
+  color: #fff;
+  background-color: #088568;
+  box-shadow: inset 0 0 0 0 #004458;
+}
+
+.buttonGreenToBlue:hover {
+  box-shadow: inset 0 70px 0 0 #004458;
+}
+
+.buttonOffer {
+  position: relative;
+  margin: 30px 300px 20px 0;
+}
+
+/* buttonDarkBlueToWhite */
+
+.buttonDarkBlueToWhite {
+  color: #0cdbab;
+  font-family: shabbold;
+  background-color: rgba(0, 43, 55, 1);
+  box-shadow: inset 0 0 0 0 #fff;
+}
+
+.buttonDarkBlueToWhite:hover {
+  color: #088568;
+  box-shadow: inset 0 70px 0 0 #fff;
+}
+
+/* buttonBlueToGreen */
+
+.buttonDarkBlueToGreen {
+  color: #fff;
+  background-color: #004458;
+  box-shadow: inset 0 0 0 0 #088568;
+}
+
+.buttonDarkBlueToGreen:hover {
+  color: #fff;
+  box-shadow: inset 0 70px 0 0 #088568;
+}
+
+.buttonForm {
+  width: 100px;
+  padding: 12px 17px;
+  position: relative;
+  left: 0px;
+}
+
+.sendCommentButtonPos {
+  right: 0;
+  top: 0;
+}
+
+.buttonCourses {
+  bottom: -30px;
+  left: 130px;
+}
+
+.LandingButtonArticlesPosition {
+  bottom: -30px;
+  right: 330px;
+}
+
+.buttonFooter {
+  z-index: 0;
+  top: 85px;
+  left: 0px;
+}
+
+.miniCoursesCards {
+  width: 110px;
+  height: 32px;
+  font-size: 11px;
+  line-height: 0;
+  bottom: 7px;
+  right: 50%;
+  margin-right: -55px;
+}
+
+.buttonCourse {
+  width: fit-content;
+  height: 47px;
+  font-size: 16px;
+  line-height: 0;
+}
+
+/* Student Pannel Buttons */
+
+.registerButton {
+  width: 120px;
+  height: 50px;
+  background: #09b28b;
+  box-shadow: inset 0 0 0 0 #088568;
+  font-size: 16px;
+  color: #fff;
+  padding: 0px;
+}
+
+.registerButton:hover {
+  box-shadow: inset 0 50px 0 0 #088568;
+}
+
+.registerButtonPos {
+  left: 0;
+  top: 0;
+}
+
+.cancelButton {
+  width: 120px;
+  height: 50px;
+  background: rgba(248, 51, 51, 0.9);
+  box-shadow: inset 0 0 0 0 rgba(248, 51, 51, 1);
+  font-size: 16px;
+  color: #fff;
+  padding: 0px;
+}
+
+.cancelButton:hover {
+  box-shadow: inset 0 50px 0 0 rgba(248, 51, 51, 1);
+}
+
+.cancelButtonPos {
+  left: 140px;
+  top: 0;
+}
+
+/* Admin Pannel Buttons */
+
+.addContextButton {
+  width: 120px;
+  height: 50px;
+  background: #09b28b;
+  box-shadow: inset 0 0 0 0 #088568;
+  font-size: 16px;
+  color: #fff;
+  padding: 0px;
+}
+
+.addContextButton:hover {
+  box-shadow: inset 0 50px 0 0 #088568;
+}
+
+.addContextButtonPos {
+  left: 0;
+  top: 0;
+}
+
+/* Button Responsive */
+@media only screen and (max-width: 1280px) {
+  .buttonCoursesCards {
+    width: 120px;
+    height: 37px;
+    font-size: 14px;
+    line-height: 0;
+  }
+  .buttonServices1 {
+    left: 5vw;
+    top: 50%;
+    margin-top: -28px;
+  }
+
+  .buttonServices2 {
+    right: 5vw;
+    top: 50%;
+    margin-top: -28px;
+  }
+
+  .LandingButtonArticlesPosition {
+    bottom: -30px;
+    right: 50%;
+    margin-right: -85px;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .buttonCourses {
+    bottom: -30px;
+    left: 50%;
+    margin-left: -87px;
+  }
+  .buttonServices1 {
+    left: 8vw;
+    top: 50%;
+    margin-top: -28px;
+  }
+
+  .buttonServices2 {
+    right: 8vw;
+    top: 50%;
+    margin-top: -28px;
+  }
+  .buttonOffer {
+    position: relative;
+    margin: 20px 0;
+  }
+  .buttonFooter {
+    width: 130px;
+  }
+  .buttonArticles {
+    padding: 7px;
+    font-size: 18px;
+    right: 1.7vw;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .buttonForm {
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+  }
+  .buttonArticles {
+    right: 4vw;
+    padding: 10px;
+    width: 70%;
+    font-size: 14px;
+  }
+  .buttonFirst {
+    top: 490px;
+    right: 245px;
+  }
+  .buttonServices1 {
+    left: 50%;
+    margin-left: -85px;
+  }
+
+  .buttonServices2 {
+    right: 50%;
+    margin-right: -85px;
+  }
+  .buttonOffer {
+    width: 153px;
+    height: 51.3px;
+    line-height: 0;
+  }
+  .buttonFooter {
+    top: 200px;
+    left: 50%;
+    width: 100px;
+    margin-left: -220px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .buttonFirst {
+    top: 500px;
+    right: 50%;
+    margin-right: -85px;
+  }
+  .buttonFooter {
+    display: none;
+  }
+  .buttonArticles {
+    padding: 6px;
+  }
+  .addContextButton {
+    width: 100%;
+  }
+}

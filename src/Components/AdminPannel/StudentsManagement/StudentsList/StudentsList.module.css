@@ -1,0 +1,99 @@
+.titles {
+  width: 100%;
+  color: #088568;
+  font-family: shab;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(8, 133, 104, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 18px;
+  text-align: right;
+}
+
+.studentStatus {
+  font-family: shab;
+  font-size: 20px;
+  color: #088568;
+  text-align: center;
+}
+
+.manageTd {
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manageTd > span {
+  width: 30%;
+  display: inline-block;
+  padding: 27px 0;
+  margin: 0;
+  position: relative;
+}
+
+.manageTd > span.deleteStudent {
+  background: url(../../../../Assets/Images/AdminPannel/DeleteR.png) no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span.editStudent {
+  background: url(../../../../Assets/Images/AdminPannel/EditProfileG.png)
+    no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span.courseManage {
+  background: url(../../../../Assets/Images/AdminPannel/CoursesG.png) no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span > .tooltip {
+  background: #ccc;
+  width: 100px;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  z-index: 5;
+
+  position: absolute;
+  top: 45px;
+  left: -10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.manageTd > span:hover > .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+.manageTd > span > .tooltip.tooltipRed {
+  background: #f83333;
+}
+
+.manageTd > span > .tooltip.tooltipGreen {
+  background: #09b28b;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .studentStatus {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .manageTd > span > .tooltip {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .studentStatus {
+    font-size: 14px;
+  }
+}

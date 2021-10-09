@@ -1,0 +1,94 @@
+.titles {
+  width: 100%;
+  color: #088568;
+  font-family: shab;
+  font-size: 16px;
+  border-bottom: 2px solid rgba(8, 133, 104, 0.3);
+  padding-bottom: 5px;
+  margin-bottom: 18px;
+  text-align: right;
+}
+
+.CommentsStatus {
+  font-family: shab;
+  font-size: 20px;
+  color: #088568;
+  text-align: center;
+}
+
+.manageTd {
+  width: 100%;
+  padding: 0 !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.manageTd > span {
+  width: 50%;
+  display: inline-block;
+  padding: 27px 0;
+  margin: 0;
+  position: relative;
+}
+
+.manageTd > span.commentsDetails {
+  background: url(../../../Assets/Images/AdminPannel/CommentDetails.png)
+    no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span.notVarify {
+  background: url(../../../Assets/Images/AdminPannel/NotVarify.png) no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+.manageTd > span.Varify {
+  background: url(../../../Assets/Images/AdminPannel/Varify.png) no-repeat;
+  background-size: 25px;
+  background-position: 50% 50%;
+}
+
+.manageTd > span > .tooltip {
+  background: #09b28b;
+  width: 100px;
+  padding: 7px;
+  text-align: center;
+  color: #fff;
+  font-size: 12px;
+  z-index: 5;
+
+  position: absolute;
+  top: 45px;
+  left: 10px;
+
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+
+.manageTd > span > .notVarifyTooltip {
+  background: #666666;
+}
+
+.manageTd > span:hover > .tooltip {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .CommentsStatus {
+    font-size: 16px;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .manageTd > span > .tooltip {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .CommentsStatus {
+    font-size: 14px;
+  }
+}

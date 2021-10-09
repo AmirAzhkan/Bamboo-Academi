@@ -1,0 +1,281 @@
+/* 
+-- colors -- 
+green = #088568 
+darkblue = #004458
+ */
+
+/*                                                  Unchangable */
+
+/* Landing Menu */
+
+.baseStyle {
+  height: 60px;
+  z-index: 2;
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.baseStyle > .holderParts {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.baseStyle .menuItems {
+  background: transparent;
+  padding: 0 17px;
+  margin-right: 5px;
+  transition: 0.6s;
+  height: 100%;
+  align-items: center;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.baseStyle .menuItems > p {
+  padding: 0;
+  margin: 0;
+  margin: 15px auto;
+}
+
+.baseStyle .menuDropDown {
+  display: none;
+}
+
+.baseStyle .aTagdrop {
+  width: 100%;
+  padding: 25px;
+  margin: 0 -15px 0 0;
+}
+
+.baseStyle .menuDropDown > ul > li > a {
+  text-align: right;
+}
+
+.baseStyle .menuItem7 {
+  box-shadow: inset 0 0 0 0 transparent;
+  margin-right: 0;
+  padding-right: 30px;
+  position: relative;
+}
+
+.holderParts > .menuItem7 > img {
+  position: absolute;
+  top: 17px;
+  right: 4px;
+  width: 20px;
+  height: 20px;
+}
+
+.userInfoDropDown {
+  direction: ltr !important;
+}
+
+.userInfoResp {
+  text-align: right;
+  padding-right: 14px;
+  font-family: shabbold;
+}
+
+.userInfoDropDown > button,
+.userInfoDropDown > button:hover,
+.userInfoDropDown > button:focus {
+  background: none;
+  border: none;
+  box-shadow: none;
+  color: #fff;
+}
+
+.userInfoDropDown > ul {
+  text-align: right;
+  border: none;
+  border-radius: 0;
+}
+
+.userInfoDropDown > ul > li > a {
+  color: #004458;
+}
+
+.userInfoDropDown > ul > li > a:hover {
+  background: rgba(8, 133, 134, 0.2);
+  color: #004458;
+}
+
+.userInfoDropDown > ul > li > p {
+  margin: 0;
+  cursor: pointer;
+  color: #004458;
+}
+
+.userInfoDropDown > ul > li > p:hover {
+  background: rgba(8, 133, 134, 0.2);
+  color: #004458;
+}
+
+/*                                                  changable */
+.landingMenu {
+  border-bottom: 1px solid #fff;
+}
+
+.landingMenu .menuItems {
+  box-shadow: inset 0 0 0 0 #004458;
+  color: #fff;
+}
+
+.landingMenu .menuItems:hover {
+  box-shadow: inset 0 80px 0 0 #004458;
+  color: #fff;
+}
+
+.landingMenu .menuItem1 {
+  background: #004458;
+}
+
+.landingMenu .aTagdrop {
+  background: url("../../../Assets/Images/LandingFirst/listWhite.png") no-repeat
+    50%;
+  background-size: 22px;
+}
+
+.landingMenu .iconBambooBlue {
+  display: none;
+}
+
+.landingMenu .iconBambooWhite {
+  display: block;
+}
+
+/*                                                 white Menu */
+.whiteMenu {
+  border-bottom: 1px solid #fff;
+}
+
+.whiteMenu .menuItems {
+  box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.whiteMenu .menuItems:hover {
+  box-shadow: inset 0 80px 0 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.whiteMenu .menuItem1 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.whiteMenu .aTagdrop {
+  background: url("../../../Assets/Images/LandingFirst/listWhite.png") no-repeat
+    50%;
+  background-size: 22px;
+}
+
+.whiteMenu .iconBambooBlue {
+  display: none;
+}
+
+.whiteMenu .iconBambooWhite {
+  display: block;
+}
+.articlesMenuTab .menuItem5 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.articlesMenuTab .menuItem5:hover {
+  box-shadow: inset 0 0 0 0 transparent;
+}
+.coursesMenuTab .menuItem6 {
+  background: rgba(255, 255, 255, 0.3);
+}
+.coursesMenuTab .menuItem6:hover {
+  box-shadow: inset 0 0 0 0 transparent;
+}
+/*                                                  Blue Menu */
+.articlesMenu {
+  border-bottom: 1px solid rgba(209, 209, 209, 0.4);
+}
+
+.articlesMenu .menuItems {
+  box-shadow: inset 0 0 0 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.articlesMenu .menuItems:hover {
+  box-shadow: inset 0 80px 0 0 rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.articlesMenu .menuItem1 {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.articlesMenu .aTagdrop {
+  background: url("../../../Assets/Images/LandingFirst/listWhite.png") no-repeat
+    50%;
+  background-size: 22px;
+}
+
+.articlesMenu .iconBambooBlue {
+  display: none;
+}
+
+.articlesMenu .iconBambooWhite {
+  display: block;
+}
+
+/* do not change */
+.baseStyle .menuItem1:hover,
+.baseStyle .menuItem2:hover,
+.baseStyle .menuItem7:hover {
+  box-shadow: inset 0 0 0 0 transparent;
+}
+
+/*                                                  Menu RESP */
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 767px) {
+  .baseStyle .menuItem3 {
+    display: none;
+  }
+  .baseStyle .menuItem4 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .baseStyle {
+    flex-direction: row-reverse;
+  }
+  .baseStyle > .holderParts {
+    direction: rtl;
+  }
+  .baseStyle .holderPart2 {
+    display: none;
+  }
+  .baseStyle .menuItem1 {
+    display: none;
+  }
+  .baseStyle .menuItem2 {
+    display: none;
+  }
+  .baseStyle .menuDropDown {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 0;
+  }
+
+  .baseStyle .menuDropDown:hover {
+    box-shadow: inset 0 0 0 0 transparent;
+  }
+  .userInfoDropDown {
+    display: none;
+  }
+}

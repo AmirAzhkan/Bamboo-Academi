@@ -1,0 +1,116 @@
+.commentCardHolder {
+  border-bottom: 1px dashed rgba(0, 68, 88, 0.5);
+  margin-bottom: 20px;
+  padding-bottom: 30px;
+}
+
+.commentCardHolder > .commentHolder > span,
+.commentCardHolder > .answerHolder > span {
+  font-family: shabbold;
+  color: #004458;
+}
+
+.commentCardHolder > .commentHolder > .comment {
+  background: #f1f1f1;
+  padding: 20px;
+  padding-bottom: 10px;
+}
+
+.commentCardHolder > .commentHolder > .comment > .commentText {
+  color: #004458;
+  font-family: shab;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 68, 88, 0.5);
+}
+
+.commentCardHolder > .commentHolder > .comment > .commentDetails {
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentCardHolder > .commentHolder > .comment > .commentDetails > p {
+  color: rgba(0, 68, 88, 0.5);
+  font-family: shabbold;
+  font-size: 14px;
+  margin: 0;
+}
+
+.commentCardHolder > .commentHolder > .comment > .commentDetails > p > span {
+  display: inline-block;
+  color: rgba(0, 68, 88, 0.5);
+  font-family: shabbold;
+}
+
+.commentHolder > .comment > .commentDetails > .mangeComment {
+  width: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.commentHolder > .comment > .commentDetails > .mangeComment > span {
+  display: inline-block;
+  margin: 0;
+  cursor: pointer;
+}
+
+.commentHolder > .comment > .commentDetails > .mangeComment > .answerToComment {
+  width: 30%;
+  height: 100%;
+  background: url(../../../Assets/Images/AdminPannel/AnswerCommentB.png)
+    no-repeat;
+  background-size: 25px;
+  background-position: 0% 0%;
+}
+
+.comment > .commentDetails > .mangeComment > .varifiedComment {
+  width: 30%;
+  background: url(../../../Assets/Images/AdminPannel/VarifiedB.png) no-repeat;
+  background-size: 25px;
+  background-position: 0% 0%;
+}
+
+.comment > .commentDetails > .mangeComment > .notVarifiedComment {
+  width: 30%;
+  background: url(../../../Assets/Images/AdminPannel/NotVarify.png) no-repeat;
+  background-size: 25px;
+  background-position: 0% 0%;
+}
+
+.commentCardHolder > .answerHolder {
+  margin-top: 20px;
+}
+
+.commentCardHolder > .answerHolder > .answerDetails {
+  background: #d1d1d1;
+  padding: 20px;
+}
+
+.commentCardHolder > .answerHolder > .answerDetails > .answerText {
+  color: #004458;
+  font-family: shab;
+  margin: 0;
+}
+
+.answerStatus {
+  color: #004458;
+  font-family: shabbold;
+  font-size: 16px;
+  margin: 0;
+  margin-top: 20px;
+}
+
+/*                                                                            Responsive */
+@media only screen and (max-width: 480px) {
+  .comment > .commentDetails > p,
+  .comment > .commentDetails > p > span {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  .comment > .commentDetails > p,
+  .comment > .commentDetails > p > span {
+    font-size: 11px;
+  }
+}

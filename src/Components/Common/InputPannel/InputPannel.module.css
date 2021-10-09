@@ -1,0 +1,157 @@
+/* unChangable */
+.holder {
+  width: 450px !important;
+  margin-bottom: 20px;
+  padding: 0 !important;
+}
+
+.holder > p {
+  font-family: shab;
+  color: #004458;
+  margin-bottom: 5px;
+  text-align: right;
+}
+
+.addCourseHolder > p {
+  font-family: shabbold;
+}
+
+.addCourseHolder .baseStyle > .line {
+  display: none;
+}
+
+.editCourseHolder {
+  width: 100% !important;
+}
+
+.addTermTitleHolder {
+  width: 100% !important;
+}
+
+.addTermTitleHolder > p {
+  font-family: shabbold;
+  margin-bottom: 10px;
+}
+
+.editCourseHolder > p {
+  font-family: shabbold;
+  margin-bottom: 10px;
+}
+
+.editCourseHolder .baseStyle > .line {
+  display: none;
+}
+
+.addTermHolder {
+  width: 450px !important;
+}
+
+.addTermHolder > p {
+  font-family: shabbold;
+  margin-bottom: 10px;
+}
+
+.baseStyle {
+  position: absolute;
+  width: 100%;
+  height: 57px;
+  z-index: 1;
+  direction: rtl;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.baseStyle > .line {
+  width: 0%;
+  height: 0%;
+  border: 2px solid transparent;
+  margin: 54px -17px 0 0;
+  transition: 0.8s;
+}
+
+.baseStyle:hover > .line {
+  width: 110%;
+  border-color: transparent;
+}
+
+.baseStyle > input {
+  position: absolute;
+  top: 0;
+  right: 7px;
+  width: 95%;
+  height: 95%;
+  border: none;
+  background: transparent;
+  outline: none;
+  font-family: shab;
+  cursor: pointer;
+}
+
+/* Changable */
+
+.inputPannel {
+  background-color: #f1f1f1;
+  position: relative;
+}
+
+.inputPannel > input:valid ~ .line {
+  width: 110%;
+}
+
+.inputPannel > input {
+  color: #004458;
+}
+
+.inputPannel > .line {
+  border: 2px solid #088568;
+}
+
+.inputPannel:hover > .line {
+  width: 110%;
+  border-color: #088568;
+}
+
+.inputPannel > input::-webkit-input-placeholder {
+  color: #004458;
+  opacity: 1;
+}
+
+.inputPannel > input:-ms-input-placeholder {
+  color: #004458;
+  opacity: 1;
+}
+
+.inputPannel > input::-moz-placeholder {
+  color: #004458;
+  opacity: 1;
+}
+
+.addCourseHolder .inputPannel > input::-webkit-input-placeholder {
+  color: #004458;
+  opacity: 0.5;
+}
+
+.addCourseHolder .inputPannel > input:-ms-input-placeholder {
+  color: #004458;
+  opacity: 0.5;
+}
+
+.addCourseHolder .inputPannel > input::-moz-placeholder {
+  color: #004458;
+  opacity: 0.5;
+}
+
+/* RESP */
+@media only screen and (max-width: 1280px) {
+  .holder {
+    width: 400px !important;
+  }
+  .editCourseHolder {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .holder {
+    width: 100% !important;
+  }
+}

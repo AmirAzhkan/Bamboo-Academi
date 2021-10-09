@@ -1,0 +1,53 @@
+/* .inputHolder {
+  height: 140px;
+  border: 1px solid red;
+} */
+
+.linkStyle {
+  text-decoration: none;
+  width: 100px;
+  color: #004458;
+  padding: 0;
+}
+.linkStyle:hover {
+  color: #004458;
+  text-decoration: underline;
+}
+
+.forgotPassword {
+  position: absolute;
+  left: 0px;
+  direction: ltr;
+  text-align: left;
+}
+
+.register {
+  width: 80px;
+  height: 30px;
+  position: relative;
+  /* top: 12px; */
+  left: 30px;
+}
+
+.registerResp {
+  display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .register {
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    top: 0;
+    left: 0;
+    display: block;
+  }
+  .forgotPassword {
+    font-size: 18px;
+    position: static;
+    direction: rtl;
+    margin-bottom: 10px;
+  }
+}

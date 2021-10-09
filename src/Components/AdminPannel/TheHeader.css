@@ -1,0 +1,132 @@
+.c-header {
+  border: none !important;
+  margin: 20px !important;
+  position: static !important;
+  z-index: 0 !important;
+
+  /* box-shadow: 0 0 10px 1px #ccc; */
+}
+
+.c-header .c-subheader {
+  padding-bottom: 2px !important;
+}
+
+.c-header .c-header-toggler {
+  margin-right: 13px;
+}
+
+.c-header-toggler-icon {
+  margin-bottom: 0px !important;
+}
+
+.c-header .c-header-brand {
+  margin-right: 15px;
+  text-decoration: none !important;
+}
+
+.c-header .c-header-brand:hover {
+  text-decoration: none;
+}
+
+.c-header .c-header-brand P {
+  font-size: 18px;
+  font-family: shabbold;
+  margin-bottom: 0px;
+  color: #088568;
+}
+
+.studentName {
+  background: url(../../Assets/Images//StudentPannel//UserG.png) no-repeat 5%
+    40%;
+  border: none;
+  background-size: 25px;
+  color: #088568;
+  font-family: shab;
+  font-size: 16px;
+  padding: 15px 0 10px 35px;
+  margin: 0;
+  margin-left: 24px;
+  cursor: pointer;
+}
+
+.studentName:hover {
+  color: #088568;
+}
+
+.studentName:focus {
+  box-shadow: none;
+}
+
+.stuNameDropDown {
+  background: #088568 !important;
+  text-align: right;
+  border-radius: none;
+  border: none !important;
+}
+
+.stuNameDropDown p {
+  color: #fff;
+  margin: 0;
+  cursor: pointer;
+}
+
+.stuNameDropDown p:hover {
+  background: none;
+  color: #fff;
+  text-decoration: underline;
+}
+
+.breadcrumb-item > a {
+  color: #088568;
+  font-size: 16px;
+}
+
+.breadcrumb-item > a:hover {
+  color: #088568;
+}
+
+.breadcrumb-item.active {
+  font-size: 16px;
+}
+
+.c-header-nav-item {
+  padding: 0 15px;
+}
+
+.c-header-nav-link {
+  font-size: 16px;
+  color: #088568;
+  text-decoration: none;
+}
+
+.c-header-nav-link:hover {
+  color: #088568;
+  text-decoration: underline;
+}
+
+/* Responsive */
+@media only screen and (max-width: 650px) {
+  .c-subheader-nav {
+    width: 100%;
+    margin: 0px !important;
+  }
+
+  .c-header-nav-item {
+    padding-right: 0px !important;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  /* .breadcrumb-item,
+  .breadcrumb-item > a,
+  .breadcrumb-item.active {
+    font-size: 14px;
+    display: none;
+  } */
+  .breadcrumb {
+    display: none !important;
+  }
+  .c-header-nav-item {
+    padding: 0 30px;
+  }
+}

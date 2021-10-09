@@ -1,0 +1,82 @@
+.c-sidebar {
+  background-color: #088568 !important;
+  z-index: 1040 !important;
+}
+
+.c-sidebar .c-sidebar-brand {
+  text-decoration: none !important;
+}
+
+.c-sidebar .c-sidebar-brand p {
+  font-size: 20px;
+  font-family: lale;
+  margin-bottom: 0px;
+}
+
+.c-sidebar .c-sidebar-brand:hover {
+  text-decoration: none !important;
+}
+
+.c-sidebar .c-sidebar-nav-title {
+  font-family: shab;
+  font-size: 14px;
+  color: #fff !important;
+  cursor: pointer;
+  text-align: right;
+}
+
+.c-sidebar-nav-item {
+  font-family: shab;
+}
+
+.c-sidebar-nav-icon {
+  margin-left: -10px !important;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover {
+  background: #fff !important;
+  color: #00775b !important;
+}
+
+.c-sidebar .c-sidebar-nav-link.c-active {
+  background: #fff !important;
+  color: #088568 !important;
+}
+
+.c-sidebar .c-sidebar-nav-link.c-active .c-sidebar-nav-icon {
+  color: #088568 !important;
+}
+
+.c-sidebar .c-sidebar-nav-link:hover .c-sidebar-nav-icon {
+  color: #088568 !important;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle {
+  font-family: shab;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover {
+  background: #00775b !important;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle.active .c-sidebar-nav-icon {
+  color: #fff !important;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown-toggle:hover .c-sidebar-nav-icon {
+  color: #fff !important;
+}
+
+.c-sidebar-nav-dropdown-toggle::after {
+  margin-left: 0px !important;
+}
+
+.c-sidebar .c-sidebar-nav-dropdown.c-show .c-sidebar-nav-link {
+  border: none !important;
+}
+
+@media only screen and (max-width: 992px) {
+  .c-sidebar {
+    position: static;
+  }
+}

@@ -1,0 +1,14 @@
+/* This Css File Created For Making Animtion For LandingCourses Cards In AOS Library ...  */
+
+[data-aos="landingCoursesCardAnim"] {
+  transform: perspective(300px) translateZ(-50px);
+  visibility: hidden;
+  opacity: 0;
+  transition-property: transform, visibility, opacity;
+}
+
+[data-aos="landingCoursesCardAnim"].aos-animate {
+  transform: translateZ(0px);
+  visibility: visible;
+  opacity: 1;
+}

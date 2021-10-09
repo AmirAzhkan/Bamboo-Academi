@@ -1,0 +1,175 @@
+.paginatHolder {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paginatHolder > .buttonHolder > button {
+  background: #088568 !important;
+  padding: 16px;
+  border: none;
+  transition: 0.5s;
+  margin-left: 5px;
+}
+
+.paginatHolder > .buttonHolder > button.doublePerve {
+  background: #088568 url("../../../Assets/Images/AdminPannel/DoubleRight.png")
+    no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.doublePerve:disabled {
+  background: rgba(8, 133, 134, 0.5)
+    url("../../../Assets/Images/AdminPannel/DoubleRight.png") no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.perve {
+  background: #088568 url("../../../Assets/Images/AdminPannel/Right.png")
+    no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.perve:disabled {
+  background: rgba(8, 133, 134, 0.5)
+    url("../../../Assets/Images/AdminPannel/Right.png") no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.doubleNext {
+  background: #088568 url("../../../Assets/Images/AdminPannel/DoubleLeft.png")
+    no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.doubleNext:disabled {
+  background: rgba(8, 133, 134, 0.5)
+    url("../../../Assets/Images/AdminPannel/DoubleLeft.png") no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.next {
+  background: #088568 url("../../../Assets/Images/AdminPannel/Left.png")
+    no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .buttonHolder > button.next:disabled {
+  background: rgba(8, 133, 134, 0.5)
+    url("../../../Assets/Images/AdminPannel/Left.png") no-repeat !important;
+  background-size: 20px !important;
+  background-position: 50% 50% !important;
+}
+
+.paginatHolder > .pageStatusHolder {
+  padding: 5px 0px;
+}
+
+.paginatHolder > .pageStatusHolder > span {
+  color: #088568 !important;
+  font-size: 16px;
+}
+
+.paginatHolder > .capacityHolder > select {
+  background: #088568 !important;
+  border: none;
+  border-radius: 0px;
+  color: #fff;
+  font-size: 16px;
+  padding: 7px;
+}
+
+.termsListPaginate > .capacityHolder {
+  display: none;
+}
+
+.articlesListTable .manageTh {
+  width: 5%;
+}
+
+.coursesListTable .manageTh {
+  width: 10%;
+}
+
+.allTermsListTable .manageTh {
+  width: 20%;
+}
+
+.deleteStudentFromTermPaginate > .capacityHolder {
+  display: none;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .studentListTable > thead > tr > th:nth-child(3) {
+    display: none;
+  }
+  .studentListTable > tbody > tr > td:nth-child(3) {
+    display: none;
+  }
+
+  .allTermsListTable > thead > tr > th:nth-child(3) {
+    display: none;
+  }
+  .allTermsListTable > tbody > tr > td:nth-child(3) {
+    display: none;
+  }
+
+  .deleteStudentFromTermTable > thead > tr > th:nth-child(2) {
+    display: none;
+  }
+  .deleteStudentFromTermTable > tbody > tr > td:nth-child(2) {
+    display: none;
+  }
+
+  .allTermsListTable .manageTh {
+    width: 30%;
+  }
+
+  .termsListTable > thead > tr > th {
+    font-size: 12px;
+  }
+  .studentListTable > thead > tr > th {
+    font-size: 12px;
+  }
+  .studentListPaginate > .buttonHolder > button {
+    margin-left: 8px;
+  }
+  .studentListPaginate > .capacityHolder,
+  .articlesListPaginate > .capacityHolder,
+  .coursesListPaginate > .capacityHolder,
+  .allTermsListPaginate > .capacityHolder {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .ReactTable {
+    font-size: 13px;
+  }
+  .studentListTable > thead > tr > th:nth-child(2) {
+    display: none;
+  }
+  .studentListTable > tbody > tr > td:nth-child(2) {
+    display: none;
+  }
+  .coursesListTable > thead > tr > th:nth-child(2) {
+    display: none;
+  }
+  .coursesListTable > tbody > tr > td:nth-child(2) {
+    display: none;
+  }
+
+  .allTermsListTable > thead > tr > th:nth-child(2) {
+    display: none;
+  }
+  .allTermsListTable > tbody > tr > td:nth-child(2) {
+    display: none;
+  }
+}

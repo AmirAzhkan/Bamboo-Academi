@@ -1,0 +1,207 @@
+.holder {
+  width: 380px;
+  height: 380px;
+  position: relative;
+  float: right;
+  margin-right: 170px;
+  margin-top: 80px;
+}
+
+.greenBoxStyle {
+  stroke-dasharray: 1520;
+  stroke-dashoffset: 0;
+  width: 380px;
+  height: 380px;
+  /* animation: GreenBoxAnimation 2s linear; */
+}
+
+.leftCardHolder {
+  width: 230px;
+  height: 500px;
+
+  position: absolute;
+  left: -130px;
+  top: -30px;
+}
+
+.rightCardHolder {
+  width: 280px;
+  height: 430px;
+  /* border: 2px solid #ccc; */
+
+  position: absolute;
+  left: 120px;
+  top: 20px;
+}
+
+.cardFlex {
+  padding-bottom: 20px;
+
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.leftTopCard {
+  width: 100%;
+  height: 55%;
+  margin-bottom: 20px;
+  background: #f7df1e url(../../Assets/Images/LandingCourses/JsLogo.png)
+    no-repeat 50% 30%;
+  background-size: 150px;
+}
+
+.leftBottomCard {
+  width: 87%;
+  height: 41%;
+  background: #cab2ef url(../../Assets/Images/LandingCourses/BootstrapLogo.png)
+    no-repeat 50% 30%;
+  background-size: 150px;
+  float: right;
+}
+
+.rightTopCard {
+  width: 100%;
+  height: 41%;
+  margin-bottom: 20px;
+  background: #6a1577 url(../../Assets/Images/LandingCourses/CSharpLogo.png)
+    no-repeat 50% 10%;
+  background-size: 80px;
+}
+
+.rightBottomCard {
+  width: 80%;
+  height: 54%;
+  background: #ffc7f8 url(../../Assets/Images/LandingCourses/JavaLogo.png)
+    no-repeat 50% 30%;
+  background-size: 150px;
+  float: left;
+}
+
+.miniCards {
+  display: none;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.miniCards > li {
+  margin: 10px;
+  width: 125px;
+  height: 160px;
+  position: relative;
+}
+
+.miniCard1 {
+  background: #f7df1e url(../../Assets/Images/LandingCourses/JsLogo.png)
+    no-repeat 50% 20%;
+  background-size: 80px;
+}
+
+.miniCard2 {
+  background: #cab2ef url(../../Assets/Images/LandingCourses/BootstrapLogo.png)
+    no-repeat 50% 30%;
+  background-size: 110px;
+}
+
+.miniCard3 {
+  background: #ffc7f8 url(../../Assets/Images/LandingCourses/JavaLogo.png)
+    no-repeat 50% 28%;
+  background-size: 80px;
+}
+
+.miniCard4 {
+  background: #6a1577 url(../../Assets/Images/LandingCourses/CSharpLogo.png)
+    no-repeat 50% 18%;
+  background-size: 80px;
+}
+
+/* @keyframes GreenBoxAnimation {
+  0% {
+    stroke-dashoffset: -1520;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+} */
+
+/* RESP */
+@media only screen and (max-width: 1280px) {
+  .leftCardHolder {
+    width: 184px;
+    height: 400px;
+    left: -100px;
+    top: -30px;
+  }
+
+  .rightCardHolder {
+    width: 224px;
+    height: 334px;
+    left: 100px;
+    top: 20px;
+  }
+
+  .cardsSameStyle {
+    background-size: 100px;
+  }
+  .rightTopCard {
+    background-size: 70px;
+  }
+  .greenBoxStyle {
+    width: 304px;
+    height: 304px;
+  }
+  .holder {
+    margin: 200px 0px;
+    transform: scale(0.92);
+  }
+}
+@media only screen and (max-width: 960px) {
+  .holder {
+    margin: 175px auto;
+    float: none;
+    border: 3px solid #0cdbab;
+    border-bottom: none;
+    width: 75%;
+    height: 25%;
+  }
+  .greenBoxStyle {
+    display: none;
+  }
+  .rightCardHolder {
+    display: none;
+  }
+  .leftCardHolder {
+    display: none;
+  }
+  .miniCards {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin: -70px 0;
+  }
+  .holder {
+    transform: scale(1);
+    height: 50%;
+  }
+}
+
+@media only screen and (max-width: 781px) {
+  .holder {
+    height: 50%;
+    margin: 175px auto;
+  }
+}
+@media only screen and (max-width: 767px) {
+  /* .holder {
+    height: 40%;
+  } */
+}
+@media only screen and (max-width: 394px) {
+  .miniCard3,
+  .miniCard4 {
+    display: none;
+  }
+}

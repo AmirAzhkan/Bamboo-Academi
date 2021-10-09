@@ -1,0 +1,24 @@
+.holder {
+  text-align: right;
+  direction: rtl;
+  padding: 20px 40px;
+}
+
+.holder > h4 {
+  font-family: lale;
+  font-size: 30px;
+  color: #004458;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.holder > .commentsHolder {
+  padding: 0;
+}
+
+.holder > .commentsHolder > p {
+  font-family: shab;
+  font-size: 18px;
+  color: #004458;
+  margin-top: 20px;
+}

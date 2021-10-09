@@ -1,0 +1,84 @@
+/*                                                 Modal Style */
+.modalMask {
+  background: none;
+}
+
+.modalHolder {
+  position: relative;
+}
+
+.modalHolder .closeModal {
+  background: url(../../Assets/Images/Courses/Close.png) no-repeat 0% 0%;
+  background-size: 35px;
+  position: absolute;
+  top: -13%;
+  right: 0px;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  transition: 0.2s;
+}
+
+.modalHolder .closeModal:hover {
+  opacity: 1;
+}
+
+.modalHolder .closeModal:focus {
+  box-shadow: none;
+}
+
+.modalHolder .modDetailsHolder {
+  float: right;
+}
+.modalHolder .modDetailsHolder h5 {
+  color: #004458;
+  margin-bottom: 10px;
+}
+
+.modalPrice {
+  color: #09b28b;
+  margin-bottom: 0px;
+}
+.modalPrice > span {
+  display: inline;
+  margin-bottom: 0;
+}
+
+.modalHolder .modImgHolder {
+  height: 240px;
+  float: left;
+}
+
+.modalHolder .modImgHolder .imageBox {
+  width: 80%;
+  height: 72%;
+  float: left;
+}
+
+.modalHolder .modImgHolder .imageBox img {
+  width: 100%;
+  height: 100%;
+}
+
+.progressHolder {
+  margin-top: -5px !important;
+}
+
+.progressHolder span {
+  display: inline;
+  width: 70px;
+}
+
+.modalHolder .courseButton {
+  background: #dbdbdb;
+  color: #004458;
+  font-size: 16px;
+  margin: 15px 0 0 0;
+  box-shadow: inset 0 0 0 0 #004458;
+  transition: 0.5s;
+}
+
+.modalHolder .courseButton:hover {
+  color: #fff;
+  box-shadow: inset 0 70px 0 0 #004458;
+}

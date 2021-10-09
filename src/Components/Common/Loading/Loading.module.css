@@ -1,0 +1,50 @@
+.holder {
+  width: 300px;
+  height: 200px;
+  background: #fff;
+  box-shadow: 0 0 20px 0px #ccc;
+  margin: auto;
+  z-index: 1070;
+
+  position: fixed;
+  inset: 0px;
+
+  cursor: pointer;
+}
+
+.holder > .logo {
+  width: 70px;
+  height: 70px;
+  background: url(../../../Assets/Images/Loading/BambooGreen.png) no-repeat;
+  background-size: 70px;
+  background-position: 50% 50%;
+  margin: 40px auto 0;
+
+  animation: LoadingAnimation 1.5s infinite;
+  transform: perspective(300px) translateZ(0px);
+  /* transition: 2s; */
+}
+/* .holder > .logo:hover {
+  transform: perspective(300px) rotate(360deg);
+} */
+
+.holder > .text {
+  font-family: shab;
+  font-size: 18px;
+  color: #088568;
+  margin: 0px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+@keyframes LoadingAnimation {
+  0% {
+    transform: perspective(300px) translateZ(0px);
+  }
+  50% {
+    transform: perspective(300px) translateZ(50px);
+  }
+  100% {
+    transform: perspective(300px) translateZ(0px);
+  }
+}

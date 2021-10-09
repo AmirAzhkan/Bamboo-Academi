@@ -1,0 +1,49 @@
+.rememberLable {
+  color: #004458;
+  width: 180px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.rememberCheckBox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #004458;
+  border-radius: 0px;
+  position: absolute;
+  right: 160px;
+  top: 0;
+  cursor: pointer;
+  transition: 0.2s;
+  padding: 7px;
+}
+
+.rememberCheckBox:checked {
+  background: #004458 no-repeat;
+  background-position: 50% 50%;
+  border: 2px solid #004458;
+  box-shadow: none;
+}
+.rememberCheckBox:focus {
+  box-shadow: none;
+  border: 2px solid #004458;
+}
+
+.rememberCheckBox:hover {
+  box-shadow: 0 0 5px 1px #50808f;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .rememberLable {
+    width: 100%;
+    margin-top: -15px;
+    margin-bottom: 30px;
+    font-size: 16px;
+  }
+  .rememberCheckBox {
+    padding: 7px;
+    right: 140px;
+    top: -17px;
+  }
+}

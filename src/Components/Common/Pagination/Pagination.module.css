@@ -1,0 +1,47 @@
+.paginatItem {
+  width: 33px;
+  height: 37px;
+  border: none;
+  background: transparent;
+  transition: 0.3s;
+}
+
+.pannelPaginat {
+  color: #088568;
+}
+.pannelPaginat:hover {
+  color: #fff;
+  background-color: #088568;
+}
+
+.coursesPaginat {
+  color: #004458;
+}
+.coursesPaginat:hover {
+  color: #fff;
+  background-color: #004458;
+}
+
+.nextCoursesPaginat {
+  background: #004458 url(../../../Assets/Images/Articles/next.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.pervCoursesPaginat {
+  background: #004458 url(../../../Assets/Images/Articles/perv.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.nextPannelPaginat {
+  background: #088568 url(../../../Assets/Images/Articles/next.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}
+
+.pervPannelPaginat {
+  background: #088568 url(../../../Assets/Images/Articles/perv.png) no-repeat;
+  background-size: 18px;
+  background-position: 50% 50%;
+}

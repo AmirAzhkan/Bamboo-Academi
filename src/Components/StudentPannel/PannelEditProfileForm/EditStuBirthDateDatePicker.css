@@ -1,0 +1,81 @@
+.datePickerHolder {
+  width: 450px !important;
+  padding: 0 !important;
+  box-sizing: border-box;
+}
+
+.datePickerHolder > .form-group {
+  height: auto;
+}
+
+.datePickerHolder > .form-group > label {
+  font-family: shab;
+  font-size: 16px;
+  color: #004458;
+  display: block;
+  text-align: right;
+  margin-bottom: 7px;
+}
+
+.datePickerHolder > .form-group > div > .DatePicker {
+  width: 100%;
+  height: 57px;
+  z-index: 1;
+}
+
+.datePickerHolder > .form-group > div > .DatePicker > input {
+  width: 100%;
+  height: 100%;
+  background: #f1f1f1 url(../../../Assets/Images/Banner/GCalendar.png) no-repeat;
+  background-position: 5% 50%;
+  background-size: 22px;
+  border: none;
+  direction: rtl !important;
+  padding-right: 11px;
+  cursor: pointer;
+  color: #004458;
+}
+
+.datePickerHolder > .form-group > div > .DatePicker > input:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.datePickerHolder > .form-group > div > .DatePicker > input::placeholder {
+  color: #004458;
+  font-family: shab;
+  opacity: 1;
+}
+
+.datePickerHolder > .form-group > div > p {
+  font-family: shab;
+  text-align: right;
+  color: red;
+  border: none;
+  background: none;
+  font-size: 13px !important;
+  padding: 0 !important;
+  margin-top: -38px !important;
+  margin-right: 110px !important;
+  margin-bottom: 38px !important;
+  box-sizing: border-box;
+  position: relative;
+  z-index: 3;
+}
+
+/* RESP */
+@media only screen and (max-width: 1280px) {
+  .datePickerHolder {
+    width: 400px !important;
+  }
+}
+@media only screen and (max-width: 1180px) {
+  .datePickerHolder {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .datePickerHolder > .form-group > div > p {
+    font-size: 11px !important;
+  }
+}

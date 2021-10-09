@@ -1,0 +1,233 @@
+.toastStyle {
+  text-align: right;
+  font-size: 16px !important;
+  border-radius: 0 !important;
+  font-family: shab !important;
+}
+
+.articleDiv {
+  height: 100vh;
+  position: relative;
+}
+
+.articleImg {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.articleMask {
+  background: #000;
+  height: 100vh;
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  z-index: 0;
+}
+
+.articleHolder {
+  width: 94%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  color: #fff;
+  z-index: 1;
+}
+
+.articleBaner {
+  height: fit-content;
+  padding: 30px 0;
+  margin: 200px auto;
+  z-index: 1;
+  position: relative;
+  width: fit-content;
+}
+
+.articleBaner > h2 {
+  border-bottom: 2px solid #666;
+  color: #fff;
+  text-align: center;
+  font-size: 45px;
+  font-family: lale;
+  padding: 20px 0;
+  min-width: 400px;
+  direction: rtl;
+}
+
+.articleCategory {
+  font-family: shab;
+  color: #dbdbdb;
+  position: absolute;
+  right: 0;
+  bottom: 0px;
+  width: fit-content;
+}
+
+.articleCategory > p {
+  width: fit-content;
+  margin: 0;
+  padding: 0;
+  float: right;
+  padding-left: 4px;
+}
+
+.articleRateHolder {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  position: absolute;
+  left: 0;
+  bottom: 7px;
+  width: fit-content;
+}
+.articleRateHolder > li {
+  width: 22px;
+  height: 22px;
+  float: left;
+  background: url("../../Assets/Images/Article/star.png") no-repeat 50%;
+  background-size: 20px;
+}
+
+/*                                                   Content */
+.articleContent {
+  background: #fff;
+  height: fit-content;
+  width: 1200px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/* .contentHolder {
+  border: 1px solid #111;
+  width: 94%;
+  margin: 0 auto;
+  position: relative;
+  color: #fff;
+} */
+
+.rightDiv {
+  width: 65%;
+  float: right;
+  direction: rtl;
+  color: #004458;
+  padding: 25px 0;
+  text-align: right;
+}
+
+.rightDiv > h2 {
+  width: 100%;
+  font-family: lale;
+}
+
+.rightDiv > p {
+  width: 100%;
+  font-family: shab;
+  margin: 20px 0 0 0;
+  text-align: right;
+  line-height: 28px;
+}
+
+.leftDiv {
+  width: 30%;
+  float: left;
+  padding: 25px 0;
+}
+
+.articleSuggestions {
+  background: #f3f3f3;
+  width: 96%;
+  height: 615px;
+}
+
+.articleSuggestions > h4 {
+  border-bottom: 1px solid #004458;
+  font-family: shab;
+  color: #004458;
+  width: 88%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 22px;
+}
+
+.cardsHolder {
+  display: block;
+  width: 100%;
+  height: 89%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+/*                                                     RESP */
+@media only screen and (max-width: 1280px) {
+  .articleBaner > h2 {
+    font-size: 40px;
+  }
+  .articleContent {
+    width: 94%;
+  }
+  .leftDiv {
+    width: 37%;
+  }
+  .rightDiv {
+    width: 62%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .articleBaner > h2 {
+    font-size: 30px;
+  }
+  .rightDiv {
+    width: 100%;
+  }
+  .leftDiv {
+    width: 100%;
+  }
+  .articleSuggestions {
+    width: 96%;
+    height: fit-content;
+    padding-bottom: 12px;
+    margin: 0 auto;
+  }
+  .cardsHolder {
+    display: block;
+    width: 88%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+}
+@media only screen and (max-width: 767px) {
+  .articleBaner > h2 {
+    font-size: 20px;
+    border-bottom: 1px solid #666;
+  }
+  .articleSuggestions > h4 {
+    width: 80%;
+  }
+  .cardsHolder {
+    width: 80%;
+  }
+  .articleDiv {
+    height: 80vh;
+  }
+  .articleMask {
+    height: 80vh;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .articleBaner {
+    margin: 100px auto;
+    width: 100%;
+  }
+  .articleBaner > h2 {
+    font-size: 16px;
+    min-width: 200px;
+  }
+  .articleDiv {
+    height: 60vh;
+  }
+  .articleMask {
+    height: 60vh;
+  }
+}

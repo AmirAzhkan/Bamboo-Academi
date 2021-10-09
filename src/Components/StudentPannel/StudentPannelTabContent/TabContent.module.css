@@ -1,0 +1,27 @@
+.content {
+  background: #fff;
+  height: 470px;
+  padding: 23px 15px;
+  box-sizing: border-box;
+}
+
+/* Responsive  */
+@media only screen and (max-width: 1180px) {
+  .content {
+    height: auto;
+    /* overflow: scroll; */
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .content {
+    height: auto;
+    /* overflow: scroll; */
+  }
+}
+
+@media only screen and (max-width: 767px) {
+}
+
+@media only screen and (max-width: 375px) {
+}

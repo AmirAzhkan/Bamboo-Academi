@@ -1,0 +1,105 @@
+.sendCommentHolder {
+  background: #ccc url("../../../Assets/Images/Course/bg5.jpg") no-repeat -3% 0%;
+  background-size: 40%;
+  height: 70vh;
+  margin: 0 auto;
+  overflow: hidden;
+  padding: 0;
+  position: relative;
+}
+
+.commentZoz {
+  height: 0;
+  width: 70%;
+  margin: 0 0%;
+  margin-right: 0px;
+  border-top: 70vh solid #dbdbdb;
+  border-left: 14vh solid transparent;
+  float: right;
+}
+
+.zozContext {
+  width: 65%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 20px 50px;
+  text-align: right;
+}
+
+.zozContext > .contextTitle {
+  width: 100%;
+  height: fit-content;
+  font-family: lale;
+  font-size: 30px;
+  color: #004458;
+  direction: ltr;
+  padding: 10px 0;
+}
+
+.zozContext > .contextCol {
+  width: 100%;
+  height: fit-content;
+  direction: ltr;
+  padding: 10px 0;
+}
+
+.zozContext > .contextCol > .redirectLoginText {
+  width: 100%;
+  font-family: shab;
+  color: #004458;
+}
+
+.zozContext > .contextCol > .redirectLoginText > p {
+  margin: 40px 0 20px;
+}
+
+.zozContext > .contextCol > .redirectLoginText > a {
+  font-family: shabbold;
+  color: #004458;
+  text-decoration: none;
+}
+
+.zozContext > .contextCol > .redirectLoginText > a:hover {
+  text-decoration: underline;
+}
+
+/*                                                        RESP */
+@media only screen and (max-width: 1280px) {
+  .sendCommentHolder {
+    background: #ccc url("../../../Assets/Images/Course/bg5.jpg") no-repeat -3% 0%;
+    background-size: 43%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .sendCommentHolder {
+    background: #dbdbdb;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: fit-content;
+  }
+
+  .commentZoz {
+    display: none;
+  }
+  .zozContext {
+    position: relative;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 480px) {
+  .contextCol .header {
+    line-height: 24px;
+  }
+  .contextCol .para {
+    padding: 8px 0;
+  }
+  .contextCol > .texts {
+    padding: 8px 10px 12px 0;
+  }
+}

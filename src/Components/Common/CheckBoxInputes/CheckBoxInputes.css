@@ -1,0 +1,36 @@
+.rememberCheckBox {
+  width: 18px;
+  height: 18px;
+  border: 2px solid #004458 !important;
+  border-radius: 0px !important;
+  position: absolute;
+  right: 160px;
+  top: 3px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rememberCheckBox:checked {
+  background: #004458 url(../../../Assets/Images/Banner/Checkmark.png) no-repeat !important;
+  background-size: 12px !important;
+  background-position: 50% 50% !important;
+  border: 2px solid #004458 !important;
+  box-shadow: none !important;
+}
+.rememberCheckBox:focus {
+  box-shadow: none !important;
+  border: 2px solid #004458 !important;
+}
+
+.rememberCheckBox:hover {
+  box-shadow: 0 0 5px 1px #50808f !important;
+}
+
+/* Responsive */
+@media only screen and (max-width: 767px) {
+  .rememberCheckBox {
+    padding: 7px;
+    right: 140px;
+    top: 1px;
+  }
+}

@@ -1,0 +1,44 @@
+/*                                           Courses Page Progress Bar */
+.coursesProgress {
+  background: #dbdbdb;
+  height: 23px;
+  width: 250px;
+  display: inline;
+  margin-top: 0px;
+}
+
+.coursesProgress .coursesProgressBar {
+  height: 100%;
+  background: #004458;
+  color: #fff;
+}
+
+/*                                         Course Page Progress Bar */
+.courseProgress {
+  background: rgba(218, 218, 218, 0.325);
+  height: 26px;
+  width: 100%;
+  display: inline;
+  margin: 0;
+  position: absolute;
+  right: 0px;
+  bottom: -38px;
+}
+
+.courseProgress .courseProgressBar {
+  height: 100%;
+  background: #fff;
+  color: #111;
+  text-align: center;
+}
+/* Resume Code Here .... */
+
+/*                                                      Responsive */
+@media only screen and (max-width: 1280px) {
+}
+@media only screen and (max-width: 960px) {
+}
+@media only screen and (max-width: 767px) {
+}
+@media only screen and (max-width: 480px) {
+}
